@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* body总有一个默认的外边距magin:0 */
+        /* 初始化 */
+        /* h1,ul,li,a,body{
+            margin: 0;
+            text-decoration: none;
+            padding: 0;
+        } */
+        #box{
+           width: 300px;
+           height: 167px;
+           /* 边框：粗细，样式实虚线，颜色 */
+           border: 2px solid red;
+        }
+        h2{
+            background: rgb(252, 102, 102);
+            line-height: 38px;
+            color: white;
+        }
+        form{
+            background: rgb(147, 224, 147);
+        }
+        /* 注意box是id还是class,id是唯一的此时可以定位否则不可定位 */
+        div:nth-of-type(1){
+           border: 2px solid blueviolet;
+        }
+        /* 实线solid 虚线dashed */
+        div:nth-of-type(2){
+           border: 2px dashed darkcyan;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="box">
+        <h2>京东会员</h2>
+        <form action="#" method="POST">
+            <div>
+                <span>用户名</span>
+                <input type="text" name="nick" placeholder="邮箱\用户名\已验证手机">
+            </div>
+            <div>
+                <span>密码</span>
+                <input type="password" name="psw">
+            </div>
+        </form>
+    </div>
+
+
+</body>
+</html>

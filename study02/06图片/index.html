@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- border:粗细，样式，颜色  solid是实线 
+        background-image默认效果是平铺满
+    -->
+    <style>
+        div{
+            width: 1000px;
+            height: 700px;
+            border: 1px solid rebeccapurple;
+            background-image: url("images/QQ截图20210425162248.png");
+        }
+        /* 水平铺齐 */
+        .div1{
+            background-repeat: repeat-x;
+        }
+        .div2{
+            background-repeat: repeat-y;
+        }
+        .div3{
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+</html>

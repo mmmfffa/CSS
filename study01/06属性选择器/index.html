@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* 类选择器+后代选择器 
+           float先让它浮动起来
+           display让它变成块元素
+           margin外边距盒子模型
+           font可以设置字体样式:必填(实体，宽高，字体)
+        */
+         .demo a{
+            float: left;
+            display: block;
+            width: 50px;
+            height: 30px;
+            border-radius: 10px;
+            background: greenyellow;
+            text-align: center;
+            text-decoration: none;
+            color: red;
+            margin: 8px;
+            font: bold 20px/30px Arial;
+         }
+         /* 属性名，属性名=属性值(正则)
+            存在id属性的元素 
+            正则表达式：
+            =是绝对等于
+            *=是通配包含这个元素
+            ^=是以这个元素开头
+            $=是以这个元素结尾
+            属性选择器语法：a[]{} 这比id选择器更加高级
+         */
+         /* a[id]{
+             background: yellow;
+         } */
+         /* a[id=first]{
+             background: rgb(85, 85, 245);
+         } */
+         /* class中有links的元素  class有多个所以带“”*/
+         /* a[class*="links"]{
+             background: yellow;
+         } */
+         /* 选中href中以http开头的元素 */
+         a[href^=http]{
+             background: yellow;
+         }
+         a[href$=doc]{
+             background: rgb(219, 184, 140);
+         }
+    </style>
+</head>
+<body>
+    <p class="demo">
+        <a href="http://www.baidu.com" class="links item first" id="first">1</a>
+        <a href="http://www.csdn.com" class="links item active" target="_blank" title="2">2</a>
+        <a href="images/123.html" class="links item">3</a>
+        <a href="images/123.png" class="links item">4</a>
+        <a href="images/123.jpg" class="links item">5</a>
+        <a href="abc">6</a>
+        <a href="/123.pdf">7</a>
+        <a href="/abc.pdf">8</a>
+        <a href="abc.doc" class="links item last">9</a>
+    </p>
+</body>
+</html>

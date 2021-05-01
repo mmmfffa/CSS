@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+       div{
+          width: 100px;
+          height: 100px;
+          border: 2px solid red;
+          /* 加了之后就不独占一行了 */
+          display:none;
+       }
+       span{
+          width: 100px;
+          height: 100px;
+          border: 2px solid red;
+          /* 默认行内元素的width和height不起作用 */
+          /* display变为块元素 */
+          /* inline-block:既是行内元素也是块元素
+             none:消失
+           */
+          display:inline-block;
+       }
+    </style>
+</head>
+<body>
+    <div>div块元素</div>
+    <span>span行内元素</span>
+</body>
+</html>

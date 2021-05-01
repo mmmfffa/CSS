@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 相对定位：
+        相对自己原来的位置偏移
+     -->
+    <style>
+        body{
+            padding: 20px;
+        }
+        div{
+            margin: 10px;
+            padding: 5px;
+            font-size: 18px;
+            line-height: 38px;
+        }
+        #father{
+          border: 2px solid red;
+          padding: 0;
+        }
+        #first{
+            border: 2px dashed rebeccapurple;
+            background: rgb(172, 112, 231);
+            /* 相对定位上下左右 */
+            position: relative;
+            top: -20px;
+            left: 20px;
+        }
+        #secord{
+            border: 2px dashed royalblue;
+            background: rgb(109, 138, 228);
+        }
+        #third{
+            border: 2px dashed gold;
+            background: rgb(240, 222, 125);
+        }
+    </style>
+</head>
+<body>
+    <div id="father">
+        <div id="first">第一个盒子</div>
+        <div id="secord">第二个盒子</div>
+        <div id="third">第三个盒子</div>
+    </div>
+</body>
+</html>
